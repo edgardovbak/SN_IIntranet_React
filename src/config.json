@@ -1,0 +1,9 @@
+{
+	"domain2" :  	"https://profil_sn7",
+	"domain" : 		"https://knowledgebase-sn7.test.sensenet.com",
+	"site" : 		"/Root/Sites/Profil",
+	"ims" : 		"/Root/IMS/BuiltIn/Portal",
+	"menu" : 		"/Root/Sites/Profil/Menu",
+	"home" : 		"/Root/Sites/Profil/Home",
+	"avatar":		"/Root/Sites/Profil/Avatar"
+} 
