@@ -1,7 +1,20 @@
 import * as React				 	from 'react';
 import { Link } 					from 'react-router-dom';
 
-class Logo extends React.Component<any, any> {
+interface Props {
+	openMenu: Function;
+}
+
+class Logo extends React.Component<Props, any> {
+	constructor(prop: Props) {
+		super(prop);
+
+		this.clickHandler = this.clickHandler.bind(this);
+	}
+
+	clickHandler = () => {
+		this.props.openMenu();
+	}
 	
 	public render () {
 		return (
@@ -9,7 +22,7 @@ class Logo extends React.Component<any, any> {
 				<Link to="/">
 					<img src={require('../images/logo.png')} alt="site logo" />
 				</Link>
-				<div className="sn_menu" onClick={this.props.openMenu}>
+				<div className="sn_menu" onClick={this.clickHandler}>
 					<span />
 				</div>
 			</div>

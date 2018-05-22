@@ -1,6 +1,20 @@
 import * as React				from 'react';
 
+interface Props {
+	openAppList: Function;
+}
+
 class Header extends React.Component<any, any> {
+	constructor(prop: Props) {
+		super(prop);
+
+		this.clickHandler = this.clickHandler.bind(this);
+	}
+
+	clickHandler = () => {
+		this.props.openAppList();
+	}
+
 	public render () {
 		return (
 			<header className="sn_header">

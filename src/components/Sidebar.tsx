@@ -3,7 +3,11 @@ import Logo 				from './Logo';
 import Menu 				from './Menu';
 import SidebarUser 				from './SidebarUser';
 
-class Sidebar extends React.Component<any, {}> {
+interface Props {
+	openMenu: Function;
+}
+
+class Sidebar extends React.Component<Props, {}> {
 	
 	public render () {
 		
