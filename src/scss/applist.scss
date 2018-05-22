@@ -1,17 +1,19 @@
 .openApps {
-    
+
     .applist {
         transition: all .3s ease;
         right: 0;
     }
 
-    .sn_header__applist {
-        transition: all .3s ease;
-        margin-right: rem(320);
-    }
-
     .sn_overflow--apps {
         display: block;
+        z-index: 11;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .applist_btn {
+        transition: all .3s ease;
+        right: rem(320);
     }
 }
 
@@ -23,7 +25,7 @@
     position: fixed;
     right: rem(20);
     top: rem(21);
-    z-index: 10;
+    z-index: 12;
     color: $dark_gray_3;
     transition: all .3s ease;
 
@@ -46,6 +48,8 @@
     flex-flow: row wrap;
     align-content: baseline;
     justify-content: start;
+    z-index: 12;
+    box-shadow: 1px 0px 4px 1px $black;
 
     &__item {
         width: rem(100);
@@ -73,7 +77,7 @@
             max-height: rem(60);
         }
 
-        span { 
+        span {
             text-align: center;
             display: block;
             overflow: hidden;
@@ -82,4 +86,4 @@
             width: 100%;
         }
     }
-} 
+}

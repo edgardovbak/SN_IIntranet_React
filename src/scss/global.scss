@@ -130,30 +130,30 @@ input[type="range"] {
     border-radius: rem(14);
     background: $green;
     outline: none; /* no focus outline */
-} 
+}
 
 input[type="range"]::-moz-range-track {
     border: inherit;
     background: transparent;
 }
-  
+
 input[type="range"]::-ms-track {
     border: inherit;
     color: transparent; /* don't drawn vertical reference line */
     background: transparent;
 }
-  
+
 input[type="range"]::-ms-fill-lower,
 input[type="range"]::-ms-fill-upper {
     background: transparent;
 }
-  
+
 input[type="range"]::-ms-tooltip {
     display: none;
 }
-  
+
   /* thumb */
-  
+
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: rem(40);
@@ -173,7 +173,7 @@ input[type="range"]::-moz-range-thumb {
     border-radius: 12px;
     background-image: linear-gradient(to bottom, $light_blue 0, $blue 100%); /* W3C */
 }
-  
+
 input[type="range"]::-ms-thumb {
     width: 40px;
     height: 18px;
@@ -181,12 +181,12 @@ input[type="range"]::-ms-thumb {
     border: 0;
     background-image: linear-gradient(to bottom, $light_blue 0, $blue  100%); /* W3C */
 }
- 
+
 input[type='file'] {
     background-color: $green;
     color: $white;
     width: 100%;
-    padding: 0; 
+    padding: 0;
     line-height: rem($input_height);
     height: rem($input_height + 3) ;
     border: none;
@@ -227,7 +227,7 @@ label {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 13;
     display: none;
 }
 
