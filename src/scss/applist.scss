@@ -5,14 +5,10 @@
         right: 0;
     }
 
-<<<<<<< HEAD
     .applist_btn {
         transition: all .3s ease;
         right: rem(320);
     } 
-
-=======
->>>>>>> 0b0b66d48902d4d62f743c413f42082487db497e
     .sn_overflow--apps {
         display: block;
         z-index: 11;
@@ -37,11 +33,7 @@
     position: fixed;
     right: rem(20);
     top: rem(21);
-<<<<<<< HEAD
-    z-index: 3;
-=======
     z-index: 12;
->>>>>>> 0b0b66d48902d4d62f743c413f42082487db497e
     color: $dark_gray_3;
     transition: all .3s ease;
 
