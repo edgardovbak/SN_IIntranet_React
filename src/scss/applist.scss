@@ -5,13 +5,17 @@
         right: 0;
     }
 
-    .sn_header__applist {
+    .applist_btn {
         transition: all .3s ease;
-        margin-right: rem(320);
-    }
+        right: rem(320);
+    } 
 
     .sn_overflow--apps {
         display: block;
+    }
+
+    .sn_sidebar {
+        z-index: 1;
     }
 }
 
@@ -23,7 +27,7 @@
     position: fixed;
     right: rem(20);
     top: rem(21);
-    z-index: 10;
+    z-index: 3;
     color: $dark_gray_3;
     transition: all .3s ease;
 
@@ -41,7 +45,7 @@
     overflow-y: auto;
     width: rem(300);
     background-color: $gray_2;
-    z-index: 10;
+    z-index: 2;
     display: flex;
     flex-flow: row wrap;
     align-content: baseline;
