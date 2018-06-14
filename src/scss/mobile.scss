@@ -14,7 +14,7 @@
             left : 0;
             transition: all .3s ease;
             height: rem($header_height_resp);
-            padding-left: rem(70);
+            padding: 0 rem(60) 0 rem(70);
         }
 
         &.open {
@@ -22,7 +22,7 @@
 
             .sn_sidebar {
                 left: 0;
-                transition: all .3s ease; 
+                transition: all .3s ease;
             }
         }
     }
@@ -36,7 +36,7 @@
     }
 
     .content_to_right {
-        
+
         &.open {
 
             .sn_overflow {
@@ -52,7 +52,7 @@
     .user {
 
         &__avatar {
-            
+
             img {
                 max-width: rem(200);
                 width: 100%;
@@ -82,11 +82,16 @@
     .sn_main {
         padding-top: 0;
     }
+
+    .applist_btn {
+      top: rem(8);
+      right: rem(8);
+    }
 }
 
 @media only screen and (max-width: rem(500)) {
     .user {
-        
+
         &__global_info {
 
             .sn_title--description {
@@ -95,5 +100,5 @@
             }
         }
     }
-    
+
 }
